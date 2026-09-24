@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-datafiniti",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Datafiniti MCP — wraps the Datafiniti Data API (datafiniti.co)",
   "type": "module",
   "main": "src/index.ts",
@@ -24,5 +24,9 @@
   "devDependencies": {
     "typescript": "^5.9.3",
     "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-54c33d4ddd1f3d5c64f2b58762f6168e34f9b9f2eef87baf55d714dea16ffd51",
+    "sourceCommit": "839ab210d969ef7f822cd747ea516f6bb49e9231"
   }
 }
