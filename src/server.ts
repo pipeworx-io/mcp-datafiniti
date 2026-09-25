@@ -9,7 +9,7 @@ import { CallToolRequestSchema, ListToolsRequestSchema } from '@modelcontextprot
 import pack from './index.js';
 
 const server = new Server(
-  { name: '@pipeworx/mcp-datafiniti', version: '0.1.1' },
+  { name: '@pipeworx/mcp-datafiniti', version: '0.1.2' },
   { capabilities: { tools: {} } },
 );
 
