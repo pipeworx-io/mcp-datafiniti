@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-datafiniti",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Datafiniti MCP — wraps the Datafiniti Data API (datafiniti.co)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-datafiniti": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "datafiniti"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-datafiniti.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/datafiniti",
   "pipeworx": {
-    "sourceHash": "v1-14a9d03b5439fe36c09adb4cfd5857b2564f4cb9f66ad1d69caf50be094ee76d",
-    "sourceCommit": "01241619b78233fd55d0e3612331499a63f03ae7"
+    "mode": "gateway",
+    "slug": "datafiniti",
+    "gatewaySlug": "datafiniti",
+    "sourceHash": "v1-2f61807d5cf330735ddfc263da6a4a203dc1f55354b32b4bbe70b109f713b5a0",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
